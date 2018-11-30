@@ -2,7 +2,7 @@
 
 import pandas as pd
 import h2o
-from h2o.estimators.xgboost import H2OXGBoostEstimator
+from h2o.estimators.deeplearning import H2ODeepLearningEstimator
 
 # Set File Paths
 data_directory = '/Users/LiamRoberts/Desktop/Professional/DataScience/Rossmann Retail Forecasting/'
@@ -43,7 +43,7 @@ X_labels = [i for i in train.col_names if (i not in ['Sales',
 y_labels = 'log_sales'
 
 # Create Model Using Default XGBoost Estimator
-model = H2OXGBoostEstimator(seed =1)
+model = H2ODeepLearningEstimator(seed =1)
 
 model.train(x=X_labels,
             y=y_labels,
