@@ -1,4 +1,4 @@
-'''Trains and saves an XGBoost Model to local directory'''
+'''Trains and saves an h2o Deep Learning Model to local directory'''
 
 import pandas as pd
 import h2o
